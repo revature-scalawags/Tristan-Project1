@@ -32,14 +32,14 @@ in /src/main/scala/HiveQueries.scala.
 
 ### Running the program
 
-In order to run this program, you must first set up a docker environment. Clone https://github.com/big-data-europe/docker-hive onto your computer and then run <docker-compose up -d>. This sets up an HDFS cluster on your computer,
+In order to run this program, you must first set up a docker environment. Clone https://github.com/big-data-europe/docker-hive onto your computer and then run ```docker-compose up -d```. This sets up an HDFS cluster on your computer,
 along with a Hive server that you are now able to connect to in order to submit queries. 
 
-Next, download the dataset above and use <docker cp> to move it from your computer and onto the active Hive server
+Next, download the dataset above and use ```docker cp``` to move it from your computer and onto the active Hive server
 container in the /opt/bin folder. As long as you keep this database running and have correctly transported this data
 onto the server, you should now be able to run the program.
 
-Now, to run the program, simply use <sbt run> in the project directory. The program should automatically connect to
+Now, to run the program, simply use ```sbt run``` in the project directory. The program should automatically connect to
 the hive server on your computer, load the dataset into a hive table, and then prompt the user to decide which query
 they want to perform on the data, given a list of options. The program will take a few minutes to run, and then output
 the results of the given query to the terminal.
