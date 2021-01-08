@@ -8,10 +8,10 @@ https://dumps.wikimedia.org/other/mediawiki_history/2020-11/enwiki/2020-11.enwik
 
 This .bz2 file is a 501MB compressed file containing tsv-formatted data of the 
 revision history of wikipedia pages during the month of November, 2020. Each
-row is an update event in wikipedia's history. In this project I am only concerned 
+row is an update event in Wikipedia's history. In this project I am only concerned 
 with revision events. 
 
-The data contains 70+ columns, notably including event_entity (whether it's a user, 
+The data contains 70+ columns, notably including event_entity (whether the event is a user, 
 page, or revision), page_title (current title of the page the event is associated
 with), page_revision_count (number of revisions of the page this event is associated 
 with since 2001), and revision_is_identity_reverted (True if this revision event was 
@@ -21,8 +21,8 @@ later reverted, False if this revision remained).
 
 With the dataset above I wrote my project in order to answer the following questions:
 
-- Which wikipedia pages have had the highest number of revisions since 2001 (top 20)?
-- For each of the top 20 pages with the highest number of revisions sine 2001, how many of these revisions occurred in November, 2020?
+- Which Wikipedia pages have had the highest number of revisions since 2001 (top 20)?
+- For each of the top 20 pages with the highest number of revisions since 2001, how many of these revisions occurred in November, 2020?
 - Of the revisions that occured for each of these top pages in November, 2020, what percentage of them were later reverted?
 
 In order to answer each of these questions, I set up a Hadoop cluster and loaded the dataset 

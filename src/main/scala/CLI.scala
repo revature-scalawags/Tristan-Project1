@@ -1,3 +1,6 @@
+// CLI: A command line interface that asks the user for a choice of query to perform. 
+// Handles invalid inputs.
+
 package project1
 
 object CLI {

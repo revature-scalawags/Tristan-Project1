@@ -1,3 +1,6 @@
+// createTableString; A string that represents the create statement, which hive 
+// will execute to generate the table (wiki_events) this program analyzes.
+
 package project1
 
 object createTableString {
