@@ -70,3 +70,5 @@ Simply execute ```sbt run``` in the project directory. The program will automati
 to the hive server on your computer, load the dataset into a hive table, and then prompt you to decide which query
 they want to perform on the data, given a list of options. The program will take a few minutes to run, and then output
 the results of the chosen query to the terminal.
+
+Use ```sbt test``` to run all tests for this program.
